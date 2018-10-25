@@ -1,0 +1,27 @@
+div {
+  border: 2px solid red;
+  text-align: center;
+
+  width: 600px;
+}
+
+.container div {
+  border: 2px solid green;
+  margin: 20px;
+  width: 150px;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 150px 150px;
+}
+
+@media(max-width: 500px) {
+  #grid {
+    display: block;
+  }
+
+  #grid div {
+    width: 100px;
+  }
+}
